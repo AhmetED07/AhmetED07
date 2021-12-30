@@ -1,0 +1,9 @@
+https://drive.google.com/u/0/uc?export=download&confirm=qJjS&id=1U4TPx0Kyu1Mlc2vdRBRyQHBgs0JSE6qT
+
+https://drive.google.com/drive/folders/1nzwHoMAMBs-nw44nqw3I9tqYBt5Dr3bO
+
+sudo apt-get install git
+
+git clone http://people.csail.mit.edu/hubert/git/pyaudio.git
+      
+      
