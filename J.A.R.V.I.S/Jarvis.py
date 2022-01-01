@@ -26,8 +26,10 @@ engine.setProperty('voice','voices[1].id')
 
 def say(text):
     engine.say(text)
-    engine.runAndWait()
+    engine.runAndWait()  
 
+say('all the systems,is online')    
+     
 def wishMe():
     hour=datetime.datetime.now().hour
     if hour>=0 and hour<12:
