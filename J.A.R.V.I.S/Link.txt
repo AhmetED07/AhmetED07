@@ -2,10 +2,10 @@ https://drive.google.com/u/0/uc?export=download&confirm=qJjS&id=1U4TPx0Kyu1Mlc2v
 
 https://drive.google.com/drive/folders/1nzwHoMAMBs-nw44nqw3I9tqYBt5Dr3bO
 
-sudo apt-get install git
+sudo apt-get install python-dev.
 
-git clone http://people.csail.mit.edu/hubert/git/pyaudio.git
+sudo apt-get install portaudio19-dev.
 
-sudo apt-get install python-pyaudio
+sudo pip install pyaudio.
       
       
