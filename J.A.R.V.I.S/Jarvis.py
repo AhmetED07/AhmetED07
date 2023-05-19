@@ -19,6 +19,8 @@ print('''
  \___(_)_/   \_(_)_| \_(_)_/(_)___(_)____(_)
 ''')
 
+
+
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
 engine.setProperty('voice','voices[1].id')
@@ -53,6 +55,7 @@ def takeCommand():
             print(f"➥ {voice}\n")
 
         except Exception as e:
+            print(e)
             return "None"
         return voice
 
@@ -66,17 +69,13 @@ if __name__=='__main__':
         voice = takeCommand().lower()
         if voice==0:
             continue
-               
-        elif "jarvis" in voice:
-            say("How Can I Help You Sir")
-            print("How Can I Help You Sir")
         
         
-        elif "jarvis are you there" in voice:
-            say('always for you sir')
+        elif "are you there" in voice or "you there" in voice:
+            say('at your serviceSir')
 
        
-        if "good bye" in voice or "shut down" in voice or "stop" in voice or "shutdown" in voice or "goodbye" in voice:
+        if "good bye" in voice or "go offline" in voice or "stop" in voice or "shutdown" in voice or "goodbye" in voice:
             say('your personal assistant JARVİS is shutting down Sir,Good bye')
             print('your personal assistant JARVİS is shutting down Sir,Good bye')
             break
@@ -118,7 +117,7 @@ if __name__=='__main__':
         elif "weather" in voice:
             api_key="8ef61edcf1c576d65d836254e11ea420"
             base_url="https://api.openweathermap.org/data/2.5/weather?"
-            say("whats the city name Sir")
+            say("whats the city name,Sir")
             city_name=takeCommand()
             complete_url=base_url+"appid="+api_key+"&q="+city_name
             response = requests.get(complete_url)
@@ -195,6 +194,9 @@ if __name__=='__main__':
         
         elif"close the helmet" in voice:
             say('okey sir i m closing the helmet')
+            
+        elif"activate Barn Door protocol" in voice or "say" in voice:
+            say('okey sir i m activateing Barn Door Protocol')
 
         elif"how are you" in voice:
             say('i m fine sir,thank you') 
